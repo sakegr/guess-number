@@ -9,29 +9,24 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Guess <span>the</span> Number</h1>
-        <p>Let's play a game with you!</p>
-        <p>
-          Please enter a number between <span class="start">1</span> -
-          <span class="end">100</span>
-        </p>
-      </header>
-      <main class="input-container">
-        <p class="message"></p>
-
-        <input type="number" name="number" id="number" min="0" />
-        <button type="submit" class="check">Check</button>
-        <button
-          type="submit"
-          class="restart"
-          style="display: none"
-          onclick="window.location.reload(false)"
-        >
-          Restart
-        </button>
-      </main>
-      <p>You have <span class="heart">7</span> chance!</p>
+      <h1>Guess <span>the</span> Number</h1>
+      <p class="lets">Let's play the guessing game!</p>
+      <p class="please">
+        Please enter a number between <span class="start">1</span> -
+        <span class="end">100</span>
+      </p>
+      <p class="message"></p>
+      <input type="number" name="number" id="number" min="0" />
+      <button type="submit" class="check">Check</button>
+      <button
+        type="submit"
+        class="restart"
+        style="display: none"
+        onclick="window.location.reload(false)"
+      >
+        Restart
+      </button>
+      <p class="game-end">You have <span class="heart">5</span> chance!</p>
     </div>
     <script src="app.js"></script>
   </body>

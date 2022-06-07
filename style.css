@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +9,13 @@
 body{
     height: 100vh;
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
-	/* background-image: url(./3.jpg);
+	background-image: url(./img/numbers4.jpg);
 	background-repeat: no-repeat;
-	background-position: left bottom;
-	background-size: cover; */	
+	background-position: center center;
+	background-size: cover;	
+    color: white;
 }
 
 
@@ -70,3 +73,61 @@ main button {
 p {
     font-size: 2rem;
 }
+
+
+/* 
+@media (max-width:900px){
+    h1{
+        width: 50%;
+        margin-top: 150px;
+        font-size: 2rem;
+    }
+    .please, .para, .life{      
+        font-size: 2rem;  
+    }
+    .input{
+        width: 100px;
+        height: 40px;
+        font-size: 30px;
+        }
+    .check, .restart{
+        width: 100px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .check:active, .restart:active{
+        font-size: 23px;
+    }
+}
+@media (max-width:470px){
+     header {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+    h1{
+        width: 50%;
+        margin-top: 2.7rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .please, .lets, .game-end{      
+        font-size: 1rem;  
+    }
+    #number {
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        }
+    .check, .restart{
+        width: 70px;
+        line-height: 30px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .check:active, .restart:active{
+        font-size: 13px;
+    }
+} */
