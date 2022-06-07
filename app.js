@@ -5,11 +5,10 @@ let restart = document.querySelector('.restart');
 let check = document.querySelector('.check');
 let message = document.querySelector('.message');
 let gameEnd = document.querySelector('.game-end');
-const lets = document.querySelector('.lets');
 const please = document.querySelector('.please');
 const inputContainer = document.querySelector('.input-container');
 const numberInput = document.querySelector('#number');
-let life = 5;
+let life = 2;
 let random = Math.floor(Math.random() * 101);
 
 console.log(random);
@@ -19,7 +18,7 @@ const guessNumber = function () {
     if (life > 1) {
         if (numberInput.value > 0 && numberInput.value < 100) {
             if (random == numberInput.value) {
-                message.innerText = `Congrats!`;
+                message.innerText = `Are you a mind reader? Congrats!`;
                 numberInput.value = '';
             }
             else if (numberInput.value < random) {
@@ -52,7 +51,15 @@ const guessNumber = function () {
         restart.style.display = 'block';
         gameEnd.innerText = `Sorry! GAME OVER!`;
      }
+
+     
 }
+
+numberInput.addEventListener('keydown', (e)=> {
+    if (e.keyCode === 13) {
+        check.click();
+    }
+ })
 
 
 window.onload = () => {
