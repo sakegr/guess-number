@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess The Number</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/question-icon.png" />
   </head>
   <body>
     <div class="container">
@@ -17,16 +18,16 @@
       <p class="message"></p>
       <input type="number" name="number" id="number" min="0" />
       <button type="submit" class="check">Check</button>
-      <button
-        type="submit"
-        class="restart"
-        style="display: none"
-        onclick="window.location.reload(false)"
-      >
-        Restart
+      <button type="submit" class="restart" style="display: none" onclick="window.location.reload(false)">
+        Play Again!
       </button>
       <p class="game-end">You have <span class="heart">5</span> chance!</p>
+      <audio id="loser" src="./audio/game-over-sound-effect.mp3"></audio>
+      <audio id="winner" src="./audio/win-sound-effect.mp3"></audio>
+      <audio id="up" src="./audio/level-up-music.mp3"></audio>
+      <audio id="down" src="./audio/level-down-music.mp3"></audio>
     </div>
     <script src="app.js"></script>
   </body>
 </html>
+
