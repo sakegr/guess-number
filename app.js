@@ -11,7 +11,7 @@ const numberInput = document.querySelector("#number");
 let life = 5;
 let random = Math.floor(Math.random() * 100 + 1);
 
-console.log(random);
+// console.log(random);
 
 const guessNumber = function () {
   if (life == 1) {
@@ -22,6 +22,7 @@ const guessNumber = function () {
       gameEnd.style.display = "none";
       restart.style.display = "block";
       numberInput.style.display = "none";
+      please.style.display = "none"
       winner.play();
     } else {
       numberInput.style.display = "none";
@@ -30,6 +31,7 @@ const guessNumber = function () {
       restart.style.display = "block";
       gameEnd.innerText = `Sorry! GAME OVER!`;
       gameEnd.style.color = "red";
+      please.style.display = "none"
       loser.play();
     }
   } else {
@@ -41,6 +43,7 @@ const guessNumber = function () {
         gameEnd.style.display = "none";
         restart.style.display = "block";
         numberInput.style.display = "none";
+        please.style.display = "none"
         winner.play();
       } else if (numberInput.value < random) {
         message.innerText = `This is too lower!\nPlease enter a high number.`;
